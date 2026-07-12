@@ -19,8 +19,8 @@ The cluster runs on repurposed Ubuntu Server machines managed by MicroK8s, distr
 Three Ubuntu Server nodes form a MicroK8s cluster. Longhorn provides distributed block storage with replication across nodes; a MinIO deployment exposes an S3-compatible endpoint that backup agents target directly. A managed switch segments traffic by function. See [architecture.md](architecture.md).
 
 ## Contents
-|---|---|
 | Document | What it covers |
+|---|---|
 | [Architecture](architecture.md) | Cluster topology, storage design, access model |
 | [Networking](networking.md) | Switch configuration, VLAN segmentation, local-access design |
 | [Storage](storage.md) | Distributed storage, object store, data integrity, retention |
@@ -29,8 +29,8 @@ Three Ubuntu Server nodes form a MicroK8s cluster. Longhorn provides distributed
 | [Skills](skills.md) | Skills built by domain, mapped to production patterns |
 
 ## Key Challenges
-|---|---|
 | Challenge | Outcome |
+|---|---|
 | [Storage for regulated data](challenges.md#storage-for-regulated-client-data) | Distributed architecture with node-level replication and configurable retention |
 | [VLAN segmentation on a single switch](challenges.md#vlan-segmentation-on-a-managed-switch) | Data plane, management, and access traffic isolated on one physical switch |
 | [S3-compatible ingestion without cloud dependency](challenges.md#s3-compatible-backup-ingestion-without-cloud) | On-cluster MinIO provides the S3 endpoint; no external dependency or egress cost |
