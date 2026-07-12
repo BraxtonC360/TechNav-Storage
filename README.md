@@ -1,13 +1,12 @@
 # TechNav Data Infrastructure
 
-Production data storage infrastructure designed, deployed, and operated by a sole technical contributor at a technology services company. The system handles client backup data and business records in a compliance-sensitive environment — built from initial hardware selection through ongoing production operation.
+Production data storage infrastructure designed, deployed, and maintained solely by me. The system handles client backup data and business records in a compliance sensitive environment, built from equipment sourced from [Tech Nav](https://www.technav.org/).
 
 The cluster runs on repurposed Ubuntu Server machines managed by MicroK8s, distributed over a managed switch with VLAN-segmented traffic. No services are exposed to the public internet; all access is local and RBAC-controlled.
 
 ## At a Glance
 
 | | |
-|---|---|
 | **Context** | On-premises production, compliance-sensitive environment |
 | **Cluster** | MicroK8s on Ubuntu Server (multi-node) |
 | **Storage** | Longhorn distributed block storage · MinIO S3-compatible object store |
@@ -22,18 +21,16 @@ Three Ubuntu Server nodes form a MicroK8s cluster. Longhorn provides distributed
 ## Contents
 
 | Document | What it covers |
-|---|---|
 | [Architecture](architecture.md) | Cluster topology, storage design, access model |
 | [Networking](networking.md) | Switch configuration, VLAN segmentation, local-access design |
 | [Storage](storage.md) | Distributed storage, object store, data integrity, retention |
 | [Operations](operations.md) | Deployment, monitoring, incident response |
 | [Challenges](challenges.md) | Problems encountered and how they were solved |
-| [Skills](skills.md) | Skills built — by domain, mapped to production patterns |
+| [Skills](skills.md) | Skills built by domain, mapped to production patterns |
 
 ## Key Challenges
 
 | Challenge | Outcome |
-|---|---|
 | [Storage for regulated data](challenges.md#storage-for-regulated-client-data) | Distributed architecture with node-level replication and configurable retention |
 | [VLAN segmentation on a single switch](challenges.md#vlan-segmentation-on-a-managed-switch) | Data plane, management, and access traffic isolated on one physical switch |
 | [S3-compatible ingestion without cloud dependency](challenges.md#s3-compatible-backup-ingestion-without-cloud) | On-cluster MinIO provides the S3 endpoint; no external dependency or egress cost |
@@ -46,4 +43,4 @@ Kubernetes cluster operations · distributed block storage · S3-compatible obje
 
 ---
 
-*Deployed and operated in a professional context as IT Technician at a technology services company.*
+*Deployed and operated in a professional context as IT Technician at Tech Nav, all resources and rights belong to [Tech Nav](https://www.technav.org/).*
