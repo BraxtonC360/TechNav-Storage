@@ -5,7 +5,7 @@ Production data storage infrastructure designed, deployed, and maintained solely
 The cluster runs on repurposed Ubuntu Server machines managed by MicroK8s, distributed over a managed switch with VLAN-segmented traffic. No services are exposed to the public internet; all access is local and RBAC-controlled.
 
 ## At a Glance
-
+| Category | Details |
 |---|---|
 | **Context** | On-premises production, compliance-sensitive environment |
 | **Cluster** | MicroK8s on Ubuntu Server (multi-node) |
