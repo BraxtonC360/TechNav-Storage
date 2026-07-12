@@ -1,4 +1,4 @@
-# TechNav Data Infrastructure
+# [Tech Nav](https://www.technav.org/) Data Infrastructure
 
 Production data storage infrastructure designed, deployed, and maintained solely by me. The system handles client backup data and business records in a compliance sensitive environment, built from equipment sourced from [Tech Nav](https://www.technav.org/).
 
