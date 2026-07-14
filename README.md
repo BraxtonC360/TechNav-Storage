@@ -43,4 +43,4 @@ Kubernetes cluster operations · distributed block storage · S3-compatible obje
 
 ---
 
-*Deployed and operated in a professional context as IT Technician at Tech Nav, all resources and rights belong to [Tech Nav](https://www.technav.org/).*
+*Deployed and operated in a professional context as IT Infra Engineer/Technician at Tech Nav, all resources and rights belong to [Tech Nav](https://www.technav.org/).*
